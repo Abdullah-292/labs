@@ -16,4 +16,10 @@
   {% else %}
     <p>No books found matching your search.</p>
   {% endif %}
+
+  {% for obj in books %}
+ID: {{obj.id}}, Title: {{obj.title}}
+<hr>
+{% endfor %}
+
 {% endblock %}
